@@ -1,0 +1,1269 @@
+
+Spectre (R) Circuit Simulator
+Version 19.1.0.322.isr5 64bit -- 28 Mar 2020
+Copyright (C) 1989-2020 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: ynk   Host: titan-rtx-dlsys   HostID: 6BD05D47   PID: 599104
+Memory  available: 42.2431 GB  physical: 67.4605 GB
+Linux   : Ubuntu 20.04.2 LTS
+CPU Type: AMD Ryzen 9 3900X 12-Core Processor
+        Socket: Processors [Frequency]
+        0:       0 [3802.3],  1 [3802.1],  2 [3802.4],  3 [3372.9],  4 [3802.4]
+                 5 [3802.5],  6 [3901.4],  7 [3804.8],  8 [3799.1],  9 [3901.1]
+                10 [3799.7], 11 [3800.6]
+        
+System load averages (1min, 5min, 15min) : 55.0 %, 75.7 %, 76.4 %
+
+
+Simulating `tests/proprietary/tb.scs' on titan-rtx-dlsys at 5:00:59 PM, Fri Aug 6, 2021 (process id: 599104).
+Current working directory: /home/ynk/workspace/sphyctre
+Command line:
+    /opt/cadence/spectre/SPECTRE191/tools.lnx86/bin/spectre -64  \
+        +interactive tests/proprietary/tb.scs
+
+Loading /opt/cadence/spectre/SPECTRE191/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /opt/cadence/spectre/SPECTRE191/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /opt/cadence/spectre/SPECTRE191/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /opt/cadence/spectre/SPECTRE191/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /opt/cadence/spectre/SPECTRE191/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/ynk/workspace/sphyctre/tests/proprietary/tb.scs
+Reading file:  /opt/cadence/spectre/SPECTRE191/tools.lnx86/spectre/etc/configs/spectre.cfg
+Reading file:  /home/ynk/workspace/sphyctre/tests/proprietary/op.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/xh035.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nmos.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/neams.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nmos_ln.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/pmos.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/peams.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nmosi.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nmosi_6.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nmosi_h_6.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nmosi_ln.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nmosi_ln_6.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nmosi_ln_h_6.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/pmosi.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/pmosib.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nmosia.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nmosia_6.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/pmosia.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nmosic.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nmosic_6.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/pmosic.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/nmos5.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/pmos5.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/nmos5i.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/nmos5i_6.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/nmos5i_h_6.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/pmos5i.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/nmos5ia.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/nmos5ia_6.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/pmos5ia.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/nmos5ic.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/nmos5ic_6.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/pmos5ic.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nmv.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nnmv.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nmvd.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/pmv.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/pmvic.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nge.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/pge.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/ngee.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/pgee.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nha.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nmvb.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/pmvb.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nmmvb.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/pmmvb.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/ngmmv.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/pgmmv.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nmva.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/pmva.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nmmva.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/pmmva.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nhv.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nhvd.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/nhvb1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nhvc1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/nhvd1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nhve1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/nhvf1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nhvg1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/phv.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nhhv.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nhhvd.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/phhv.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/ndh.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/ndha.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/phva.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/ndhb.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/ndhb1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/phvb.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/ndhc.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/ndhc1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/phvc.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/ndhd.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/ndhd1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/phvd.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/ndhe.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/ndhe1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/phve.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/ndhf.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/bsim3v3/tm/ndhf1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/phvf.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/ndhg.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/ndhg1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/ndhi.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nmosrf.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/pmosrf.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nmosirf.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nmosirf_6.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nmosirf_h_6.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/pmosirf.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/nmvrf.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bsim3v3/tm/pmvrf.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qp1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qp2.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qp3.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qp4.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qpvh.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qpvha.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qpvhscr.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qpa.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/LP.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/LE.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/LC.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/PM.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qnva.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qnva_npn.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qnva_pnp.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qnva2.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qnva2_npn.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qnva2_pnp.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qnvara.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qnvara_npn.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qnvara_pnp.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qnvarb.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qnvarb_npn.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qnvarb_pnp.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qnvarc.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qnvarc_npn.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qnvarc_pnp.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qnvb.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qnvb_npn.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qnvb_pnp.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qnvc.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qnvc_npn.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/bip/tm/qnvc_pnp.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dn.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dn_scr.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dnds.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dp.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dp_scr.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dplw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dphw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dwh.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dwds.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dwplw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dwplwh.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dwphw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/ddshw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dlw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dlwh.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dlwhb.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dhw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dhwh.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dgnds.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dgphw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dwpvw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dwplvw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dmplw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dmpvw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dmpvwh.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dmplvw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dlvw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dvw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dclw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/ddsclw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/depclw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dwpclw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dmpclw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dmpcw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dsepclw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dwpndh1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dwpndh2.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dwpndh3.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dmpphv1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dmpphv2.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dmpphv3.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dlwnhv1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dlwnhv2.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dlwnhv3.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/ddsndh1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/depndh1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/depndh3.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/ddsndh2.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/ddsndh3.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dtn.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dtnds.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/ds.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/dio/tm/dsa.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dsb1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/dio/tm/dsb2.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dsc1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dsc1_qp1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/dio/tm/dsc2.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos5/models/dio/tm/dsc2_qp1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dpol.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dnp20.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dnp30.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dpp20.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dpp30.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dzap.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/dio/tm/dzapa.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rsp1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rp1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rnp1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rpp1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rhp1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rp2.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rzp2.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rsp.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rdp.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rdp_io.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rdpmv_io.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rdplw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rdplw_io.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rsn.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rdn.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rdn_io.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rdnmv_io.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rdnmvwp_io.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rdnmvep_io.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rdnep_io.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rdnlw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rdnlw_io.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rw_scr.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rhw.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rm1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rm2.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rm2t.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rm3t.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rm3.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rm3l.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rm4.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rm4l.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/pfuse.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rhp1_rsq7k.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rctp1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rctp2.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rctdn.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rctdp.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rsbdn.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rsbdp.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rsbp1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rsbnp1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rsbpp1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rsbp2.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rsbzp2.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rsildn.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rsildp.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rsilp1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rsilp2.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rppoly1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rmet1.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rmet2.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rmet2t.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rmet3.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rmet3t.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rmet3l.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rmet4.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/rmet4l.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/res/tm/s_res.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cpp.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cpp2.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cpod.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cpoda.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cpod_hv.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cpodi_hv.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/csandwt.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/csandwtf.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/csandwtfl.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/csandwtm.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/csandwtml.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cmm.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cmm2.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cdmm.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cdmm2.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cpp_i.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cpod_i.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cpodhv_i.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cpodihv_i.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/csandwt_i.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/csandwtf_i.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/csandwtfl_i.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/csandwtm_i.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/csandwtml_i.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cmm_i.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cdmm_i.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cp1sub.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cp1suba.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cp1subp.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cp2sub.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cp2suba.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cp2subp.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cm1sub.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cm1suba.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cm1subp.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cm2sub.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cm2suba.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cm2subp.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cm3sub.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cm3suba.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cm3subp.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cm3lsub.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cm3lsuba.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cm3lsubp.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cm4sub.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cm4suba.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cm4subp.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cm4lsub.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cm4lsuba.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/cm4lsubp.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/dpvc.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/dpvc_dp.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/mosvc.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/cap/tm/mosvc_pmos.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/ind/tm/l09a.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/ind/tm/l09b.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/ind/tm/l09c.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/models/ind/tm/l09d.scs
+Reading file:  /home/ynk/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos/param.scs
+Time for NDB Parsing: CPU = 226.357 ms, elapsed = 1.72746 s.
+Time accumulated: CPU = 256.095 ms, elapsed = 1.72747 s.
+Peak resident memory used = 101 Mbytes.
+
+Reading link:  /opt/cadence/spectre/SPECTRE191/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /opt/cadence/spectre/SPECTRE191/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /opt/cadence/spectre/SPECTRE191/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /opt/cadence/spectre/SPECTRE191/tools.lnx86/spectre/etc/ahdl/constants.vams
+Existing shared object for module bsource_d312da is up to date.
+Installed compiled interface for bsource_d312da.
+Existing shared object for module bsource_2e75e0 is up to date.
+Installed compiled interface for bsource_2e75e0.
+Existing shared object for module bsource_rp2mod_ee187a is up to date.
+Installed compiled interface for bsource_rp2mod_ee187a.
+Time for Elaboration: CPU = 14.967 ms, elapsed = 15.4591 ms.
+Time accumulated: CPU = 271.138 ms, elapsed = 1.74302 s.
+Peak resident memory used = 113 Mbytes.
+
+
+Time for EDB Visiting: CPU = 922 us, elapsed = 1.03498 ms.
+Time accumulated: CPU = 272.132 ms, elapsed = 1.74415 s.
+Peak resident memory used = 114 Mbytes.
+
+
+Notice from spectre during topology check.
+    Only one connection to node `OUT_IDEAL'.
+
+
+Global user options:
+            vabstol = 1e-06
+            iabstol = 1e-12
+               temp = 27
+           homotopy = 7
+               gmin = 1e-12
+             rforce = 1
+             rawfmt = nutbin
+             reltol = 0.0001
+               tnom = 27
+
+Scoped user options:
+
+Circuit inventory:
+              nodes 33
+            bsim3v3 8     
+     bsource_2e75e0 1     
+     bsource_d312da 1     
+bsource_rp2mod_ee187a 2     
+          capacitor 9     
+             dcfeed 1     
+             iprobe 1     
+            isource 1     
+           resistor 11    
+             switch 3     
+        transformer 2     
+               vcvs 2     
+            vsource 8     
+
+Analysis and control statement inventory:
+                 ac 1     
+              alter 11    
+                 dc 3     
+            dcmatch 1     
+              noise 1     
+                stb 1     
+               tran 1     
+                 xf 1     
+
+Output statements:
+             .probe 0     
+           .measure 0     
+               save 1     
+
+Time for parsing: CPU = 1.402 ms, elapsed = 1.79505 ms.
+Time accumulated: CPU = 273.59 ms, elapsed = 1.74601 s.
+Peak resident memory used = 117 Mbytes.
+
+~~~~~~~~~~~~~~~~~~~~~~
+Pre-Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+Entering Skill interactive front end.  Use `sclHelp' for help and `sclQuit' to quit.)
+
+fb1: `INPSW:position' set to 1.
+
+fb2: `INNSW:position' set to 1.
+
+fb3: `OUTSW:position' set to 1.
+
+**************************************************
+DC Device Matching Analysis `dcmatch' at V(OUT,CM)
+**************************************************
+DC simulation time: CPU = 587 us, elapsed = 586.987 us.
+
+Notice from spectre during DC-Mismatch analysis `dcmatch'.
+    No parameter is chosen for dcmatch analysis or sensitivity is insignificant.
+
+
+
+V(OUT,CM) = -23.1 uV  +/- 0 V       (1-sigma total variation)
+
+Accumulated DC solution time =            0 s.
+Intrinsic dcmatch analysis time =              0 s.
+Total time required for dcmatch analysis `dcmatch': CPU = 869 us, elapsed = 869.036 us.
+Time accumulated: CPU = 280.872 ms, elapsed = 4.02332 s.
+Peak resident memory used = 121 Mbytes.
+
+
+*************************************************
+Stability Analysis `stb': freq = (1 Hz -> 10 GHz)
+*************************************************
+
+Notice from spectre during STB analysis `stb'.
+    Operating points will not be recomputed: the circuit and conditions were not changed since previous analysis.
+Warning from spectre at freq = 0 Hz during STB analysis `stb'.
+    WARNING (SPECTRE-7017): Output for `margin.stb' is not supported in nutmeg format. Request ignored.
+
+......9......8......7......6......5......4......3......2......1......0
+Gain margin = 41.4186 dB at frequency = 196.461 MHz.
+Phase margin = 103.041 Deg at frequency = 3.27515 MHz.
+Accumulated DC solution time =            0 s.
+Intrinsic stb analysis time =              0 s.
+Total time required for stb analysis `stb': CPU = 4.955 ms, elapsed = 4.95505 ms.
+Time accumulated: CPU = 285.91 ms, elapsed = 4.02836 s.
+Peak resident memory used = 121 Mbytes.
+
+
+*************************************************
+Transient Analysis `tran': time = (0 s -> 100 us)
+*************************************************
+DC simulation time: CPU = 167 us, elapsed = 167.847 us.
+Important parameter values:
+    start = 0 s
+    outputstart = 0 s
+    stop = 100 us
+    step = 100 ns
+    maxstep = 1 us
+    ic = all
+    useprevic = no
+    skipdc = no
+    reltol = 10e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    errpreset = conservative
+    method = gear2only
+    lteratio = 10
+    relref = alllocal
+    cmin = 0 F
+    gmin = 1 pS
+
+
+Output and IC/nodeset summary:
+                 save   1       (current)
+                 save   4       (voltage)
+
+......9......8......7......6......5......4......3......2......1......0
+Number of accepted tran steps =             352
+
+Maximum value achieved for any signal of each quantity: 
+V: V(DUT.R0.100) = 2.275 V
+I: I(VSUPP:p) = 129.2 uA
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Post-Transient Simulation Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   -   To further speed up simulation, consider
+          add ++aps on command line
+   -   Non-default settings that could significantly slow down simulation
+          errpreset = conservative, default moderate
+          reltol = 10e-06, default 100e-06 (conservative)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+During simulation, the CPU load for active processors is :
+         0 (59.2 %)      1 (36.2 %)      2 (34.6 %)      3 (35.9 %)
+         4 (36.0 %)      5 (35.4 %)      6 (35.7 %)      7 (34.9 %)
+         8 (33.2 %)      9 (75.3 %)     10 (35.2 %)     11 (23.2 %)
+        Total: 474.9%
+Initial condition solution time: CPU = 186 us, elapsed = 186.205 us.
+Intrinsic tran analysis time:    CPU = 14.934 ms, elapsed = 14.935 ms.
+Total time required for tran analysis `tran': CPU = 15.396 ms, elapsed = 15.3961 ms.
+Time accumulated: CPU = 301.429 ms, elapsed = 4.04388 s.
+Peak resident memory used = 123 Mbytes.
+
+
+***********************************************
+Noise Analysis `noise': freq = (1 mHz -> 1 GHz)
+***********************************************
+DC simulation time: CPU = 424 us, elapsed = 425.1 us.
+Zero diagonal found in Jacobian at `L2:1' and `OF'.
+......9......8......7......6......5......4......3......2......1......0
+Accumulated DC solution time =            0 s.
+Intrinsic noise analysis time =              0 s.
+Total time required for noise analysis `noise': CPU = 3.552 ms, elapsed = 4.78292 ms.
+Time accumulated: CPU = 305.078 ms, elapsed = 4.04876 s.
+Peak resident memory used = 124 Mbytes.
+
+
+fb4: `a0' set to 100e-03.
+
+**********************************************
+DC Analysis `dc1': vid = (-330e-03 -> 330e-03)
+**********************************************
+Important parameter values:
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+......9......8......7......6......5......4......3...
+
+Notice from spectre at vid = 163.68e-03 during DC analysis `dc1'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(DUT.MND11.m1:int_d) = 3.19598 uV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+......9......8......7......6......5......4......3......2......1......0
+
+Maximum value achieved for any signal of each quantity: 
+V: V(OUT_IDEAL) = 3.3 V
+I: I(VSUPP:p) = 85.93 uA
+DC simulation time: CPU = 104.38 ms, elapsed = 104.382 ms.
+
+Notice from spectre at vid = 330e-03 during DC analysis `dc1'.
+    The value of parameter 'vid' has been reset to the original value 0.
+
+Total time required for dc analysis `dc1': CPU = 104.45 ms, elapsed = 104.453 ms.
+Time accumulated: CPU = 410.85 ms, elapsed = 4.15454 s.
+Peak resident memory used = 124 Mbytes.
+
+
+ol1: `INNSW:position' set to 2.
+
+ol2: `INPSW:position' set to 3.
+
+ol3: `OUTSW:position' set to 2.
+
+********************************************************
+Transfer Function Analysis `xf': freq = (1 mHz -> 1 GHz)
+********************************************************
+DC simulation time: CPU = 379 us, elapsed = 379.801 us.
+Zero diagonal found in Jacobian at `L2:1' and `OF'.
+......9......8......7......6......5......4......3......2......1......0
+Accumulated DC solution time =            0 s.
+Intrinsic xf analysis time =              0 s.
+Total time required for xf analysis `xf': CPU = 6.481 ms, elapsed = 6.48189 ms.
+Time accumulated: CPU = 417.641 ms, elapsed = 4.16132 s.
+Peak resident memory used = 124 Mbytes.
+
+
+*****************************************************
+AC Analysis `ac': freq = 1 Hz, vicm = (-1.65 -> 1.65)
+*****************************************************
+
+Notice from spectre during DC analysis, during AC analysis `ac'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(DUT.MND11.m1:int_d) = -31.6407 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 403 us, elapsed = 401.974 us.
+Zero diagonal found in Jacobian at `L2:1' and `OF'.
+
+Notice from spectre at vicm = -1.6434 during DC analysis, during AC analysis `ac'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(DUT.MND11.m1:int_d) = -31.5336 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 181 us, elapsed = 180.96 us.
+
+Notice from spectre at vicm = -1.6368 during DC analysis, during AC analysis `ac'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(DUT.MND11.m1:int_d) = -31.4149 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 162 us, elapsed = 162.125 us.
+
+Notice from spectre at vicm = -1.6302 during DC analysis, during AC analysis `ac'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(DUT.MND11.m1:int_d) = -31.1923 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+
+DC simulation time: CPU = 160 us, elapsed = 159.979 us.
+
+Notice from spectre at vicm = -1.6236 during DC analysis, during AC analysis `ac'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        Further occurrences of this notice will be suppressed.
+        dV(DUT.MND11.m1:int_d) = -30.9438 mV
+        Further occurrences of this notice will be suppressed.
+        Use the `gmin_check' option to eliminate or expand this report.
+        Further occurrences of this notice will be suppressed.
+
+DC simulation time: CPU = 183 us, elapsed = 182.152 us.
+.
+DC simulation time: CPU = 114 us, elapsed = 113.964 us.
+DC simulation time: CPU = 112 us, elapsed = 112.057 us.
+DC simulation time: CPU = 111 us, elapsed = 110.865 us.
+DC simulation time: CPU = 109 us, elapsed = 109.196 us.
+DC simulation time: CPU = 127 us, elapsed = 465.87 us.
+DC simulation time: CPU = 116 us, elapsed = 116.11 us.
+DC simulation time: CPU = 111 us, elapsed = 111.103 us.
+..
+DC simulation time: CPU = 110 us, elapsed = 109.911 us.
+DC simulation time: CPU = 108 us, elapsed = 108.004 us.
+DC simulation time: CPU = 108 us, elapsed = 108.004 us.
+DC simulation time: CPU = 108 us, elapsed = 108.004 us.
+DC simulation time: CPU = 108 us, elapsed = 108.004 us.
+DC simulation time: CPU = 121 us, elapsed = 120.878 us.
+DC simulation time: CPU = 120 us, elapsed = 119.925 us.
+...
+DC simulation time: CPU = 129 us, elapsed = 128.984 us.
+DC simulation time: CPU = 121 us, elapsed = 121.117 us.
+DC simulation time: CPU = 122 us, elapsed = 122.07 us.
+DC simulation time: CPU = 120 us, elapsed = 121.117 us.
+DC simulation time: CPU = 128 us, elapsed = 128.031 us.
+DC simulation time: CPU = 121 us, elapsed = 121.117 us.
+DC simulation time: CPU = 121 us, elapsed = 121.832 us.
+....
+DC simulation time: CPU = 123 us, elapsed = 123.024 us.
+DC simulation time: CPU = 108 us, elapsed = 108.004 us.
+DC simulation time: CPU = 108 us, elapsed = 107.05 us.
+DC simulation time: CPU = 108 us, elapsed = 108.004 us.
+DC simulation time: CPU = 108 us, elapsed = 108.004 us.
+DC simulation time: CPU = 108 us, elapsed = 108.004 us.
+DC simulation time: CPU = 107 us, elapsed = 106.096 us.
+DC simulation time: CPU = 106 us, elapsed = 106.096 us.
+.....
+DC simulation time: CPU = 109 us, elapsed = 108.957 us.
+DC simulation time: CPU = 106 us, elapsed = 106.096 us.
+DC simulation time: CPU = 107 us, elapsed = 107.05 us.
+DC simulation time: CPU = 106 us, elapsed = 107.05 us.
+DC simulation time: CPU = 120 us, elapsed = 119.925 us.
+DC simulation time: CPU = 119 us, elapsed = 118.971 us.
+DC simulation time: CPU = 120 us, elapsed = 119.925 us.
+......
+DC simulation time: CPU = 121 us, elapsed = 120.878 us.
+DC simulation time: CPU = 121 us, elapsed = 122.07 us.
+DC simulation time: CPU = 129 us, elapsed = 128.031 us.
+DC simulation time: CPU = 124 us, elapsed = 123.024 us.
+DC simulation time: CPU = 122 us, elapsed = 123.024 us.
+DC simulation time: CPU = 121 us, elapsed = 121.117 us.
+DC simulation time: CPU = 123 us, elapsed = 122.786 us.
+......9
+DC simulation time: CPU = 121 us, elapsed = 120.878 us.
+DC simulation time: CPU = 121 us, elapsed = 120.878 us.
+DC simulation time: CPU = 119 us, elapsed = 118.971 us.
+DC simulation time: CPU = 120 us, elapsed = 120.878 us.
+DC simulation time: CPU = 118 us, elapsed = 117.064 us.
+DC simulation time: CPU = 117 us, elapsed = 116.825 us.
+DC simulation time: CPU = 117 us, elapsed = 116.825 us.
+......9.
+DC simulation time: CPU = 118 us, elapsed = 118.971 us.
+DC simulation time: CPU = 117 us, elapsed = 118.017 us.
+DC simulation time: CPU = 116 us, elapsed = 115.871 us.
+DC simulation time: CPU = 193 us, elapsed = 193.834 us.
+DC simulation time: CPU = 115 us, elapsed = 114.918 us.
+DC simulation time: CPU = 116 us, elapsed = 116.11 us.
+DC simulation time: CPU = 115 us, elapsed = 114.918 us.
+......9..
+DC simulation time: CPU = 116 us, elapsed = 115.871 us.
+DC simulation time: CPU = 119 us, elapsed = 118.017 us.
+DC simulation time: CPU = 115 us, elapsed = 114.918 us.
+DC simulation time: CPU = 115 us, elapsed = 115.156 us.
+DC simulation time: CPU = 115 us, elapsed = 114.918 us.
+DC simulation time: CPU = 135 us, elapsed = 182.152 us.
+DC simulation time: CPU = 118 us, elapsed = 118.017 us.
+......9...
+DC simulation time: CPU = 117 us, elapsed = 118.017 us.
+DC simulation time: CPU = 116 us, elapsed = 116.11 us.
+DC simulation time: CPU = 118 us, elapsed = 117.064 us.
+DC simulation time: CPU = 117 us, elapsed = 116.825 us.
+DC simulation time: CPU = 118 us, elapsed = 118.017 us.
+DC simulation time: CPU = 121 us, elapsed = 121.117 us.
+DC simulation time: CPU = 117 us, elapsed = 117.064 us.
+......9....
+DC simulation time: CPU = 118 us, elapsed = 118.017 us.
+DC simulation time: CPU = 119 us, elapsed = 118.971 us.
+DC simulation time: CPU = 117 us, elapsed = 117.064 us.
+DC simulation time: CPU = 118 us, elapsed = 117.064 us.
+DC simulation time: CPU = 116 us, elapsed = 115.871 us.
+DC simulation time: CPU = 117 us, elapsed = 117.064 us.
+DC simulation time: CPU = 116 us, elapsed = 116.11 us.
+DC simulation time: CPU = 117 us, elapsed = 117.064 us.
+......9.....
+DC simulation time: CPU = 118 us, elapsed = 118.017 us.
+DC simulation time: CPU = 117 us, elapsed = 116.825 us.
+DC simulation time: CPU = 118 us, elapsed = 118.971 us.
+DC simulation time: CPU = 116 us, elapsed = 114.918 us.
+DC simulation time: CPU = 116 us, elapsed = 115.871 us.
+DC simulation time: CPU = 119 us, elapsed = 117.779 us.
+DC simulation time: CPU = 123 us, elapsed = 123.024 us.
+......9......
+DC simulation time: CPU = 116 us, elapsed = 115.871 us.
+DC simulation time: CPU = 116 us, elapsed = 116.11 us.
+DC simulation time: CPU = 116 us, elapsed = 116.11 us.
+DC simulation time: CPU = 119 us, elapsed = 118.971 us.
+DC simulation time: CPU = 121 us, elapsed = 120.878 us.
+DC simulation time: CPU = 116 us, elapsed = 115.871 us.
+DC simulation time: CPU = 117 us, elapsed = 117.064 us.
+......9......8
+DC simulation time: CPU = 121 us, elapsed = 120.878 us.
+DC simulation time: CPU = 119 us, elapsed = 118.971 us.
+DC simulation time: CPU = 116 us, elapsed = 116.11 us.
+DC simulation time: CPU = 115 us, elapsed = 115.156 us.
+DC simulation time: CPU = 120 us, elapsed = 120.163 us.
+DC simulation time: CPU = 116 us, elapsed = 116.11 us.
+DC simulation time: CPU = 117 us, elapsed = 117.064 us.
+......9......8.
+DC simulation time: CPU = 120 us, elapsed = 118.971 us.
+DC simulation time: CPU = 121 us, elapsed = 120.878 us.
+DC simulation time: CPU = 115 us, elapsed = 114.918 us.
+DC simulation time: CPU = 114 us, elapsed = 115.156 us.
+DC simulation time: CPU = 115 us, elapsed = 113.964 us.
+DC simulation time: CPU = 122 us, elapsed = 121.117 us.
+DC simulation time: CPU = 116 us, elapsed = 114.918 us.
+......9......8..
+DC simulation time: CPU = 118 us, elapsed = 117.064 us.
+DC simulation time: CPU = 118 us, elapsed = 118.017 us.
+DC simulation time: CPU = 117 us, elapsed = 118.017 us.
+DC simulation time: CPU = 117 us, elapsed = 117.064 us.
+DC simulation time: CPU = 117 us, elapsed = 115.871 us.
+DC simulation time: CPU = 117 us, elapsed = 116.11 us.
+DC simulation time: CPU = 125 us, elapsed = 125.17 us.
+......9......8...
+DC simulation time: CPU = 120 us, elapsed = 119.925 us.
+DC simulation time: CPU = 119 us, elapsed = 118.971 us.
+DC simulation time: CPU = 125 us, elapsed = 126.123 us.
+DC simulation time: CPU = 123 us, elapsed = 123.024 us.
+DC simulation time: CPU = 117 us, elapsed = 117.064 us.
+DC simulation time: CPU = 118 us, elapsed = 118.017 us.
+DC simulation time: CPU = 116 us, elapsed = 116.825 us.
+......9......8....
+DC simulation time: CPU = 119 us, elapsed = 119.209 us.
+DC simulation time: CPU = 118 us, elapsed = 118.017 us.
+DC simulation time: CPU = 119 us, elapsed = 119.209 us.
+DC simulation time: CPU = 117 us, elapsed = 118.017 us.
+DC simulation time: CPU = 118 us, elapsed = 117.064 us.
+DC simulation time: CPU = 118 us, elapsed = 118.017 us.
+DC simulation time: CPU = 117 us, elapsed = 117.064 us.
+DC simulation time: CPU = 117 us, elapsed = 118.017 us.
+......9......8.....
+DC simulation time: CPU = 118 us, elapsed = 118.017 us.
+DC simulation time: CPU = 118 us, elapsed = 118.017 us.
+DC simulation time: CPU = 117 us, elapsed = 116.825 us.
+DC simulation time: CPU = 122 us, elapsed = 122.07 us.
+DC simulation time: CPU = 117 us, elapsed = 117.064 us.
+DC simulation time: CPU = 117 us, elapsed = 117.064 us.
+DC simulation time: CPU = 117 us, elapsed = 116.11 us.
+......9......8......
+DC simulation time: CPU = 121 us, elapsed = 121.117 us.
+DC simulation time: CPU = 118 us, elapsed = 117.064 us.
+DC simulation time: CPU = 117 us, elapsed = 117.064 us.
+DC simulation time: CPU = 118 us, elapsed = 118.017 us.
+DC simulation time: CPU = 119 us, elapsed = 118.971 us.
+DC simulation time: CPU = 117 us, elapsed = 118.017 us.
+DC simulation time: CPU = 117 us, elapsed = 116.825 us.
+......9......8......7
+DC simulation time: CPU = 119 us, elapsed = 118.971 us.
+DC simulation time: CPU = 118 us, elapsed = 118.017 us.
+DC simulation time: CPU = 117 us, elapsed = 118.017 us.
+DC simulation time: CPU = 117 us, elapsed = 118.017 us.
+DC simulation time: CPU = 117 us, elapsed = 118.017 us.
+DC simulation time: CPU = 118 us, elapsed = 118.971 us.
+DC simulation time: CPU = 118 us, elapsed = 118.017 us.
+......9......8......7.
+DC simulation time: CPU = 120 us, elapsed = 118.971 us.
+DC simulation time: CPU = 118 us, elapsed = 118.017 us.
+DC simulation time: CPU = 117 us, elapsed = 117.064 us.
+DC simulation time: CPU = 117 us, elapsed = 117.064 us.
+DC simulation time: CPU = 117 us, elapsed = 115.871 us.
+DC simulation time: CPU = 117 us, elapsed = 115.871 us.
+DC simulation time: CPU = 117 us, elapsed = 117.064 us.
+......9......8......7..
+DC simulation time: CPU = 120 us, elapsed = 118.971 us.
+DC simulation time: CPU = 117 us, elapsed = 118.017 us.
+DC simulation time: CPU = 117 us, elapsed = 115.871 us.
+DC simulation time: CPU = 116 us, elapsed = 116.11 us.
+DC simulation time: CPU = 117 us, elapsed = 115.871 us.
+DC simulation time: CPU = 117 us, elapsed = 115.871 us.
+DC simulation time: CPU = 120 us, elapsed = 119.925 us.
+......9......8......7...
+DC simulation time: CPU = 119 us, elapsed = 118.971 us.
+DC simulation time: CPU = 118 us, elapsed = 118.017 us.
+DC simulation time: CPU = 119 us, elapsed = 118.971 us.
+DC simulation time: CPU = 117 us, elapsed = 117.064 us.
+DC simulation time: CPU = 117 us, elapsed = 117.064 us.
+DC simulation time: CPU = 117 us, elapsed = 116.825 us.
+DC simulation time: CPU = 117 us, elapsed = 117.064 us.
+......9......8......7....
+DC simulation time: CPU = 119 us, elapsed = 118.971 us.
+DC simulation time: CPU = 118 us, elapsed = 118.017 us.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 105 us, elapsed = 105.143 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 106 us, elapsed = 104.904 us.
+......9......8......7.....
+DC simulation time: CPU = 107 us, elapsed = 107.05 us.
+DC simulation time: CPU = 105 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 103 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 105 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 104.904 us.
+......9......8......7......
+DC simulation time: CPU = 105 us, elapsed = 105.858 us.
+DC simulation time: CPU = 105 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 104.189 us.
+DC simulation time: CPU = 105 us, elapsed = 104.189 us.
+DC simulation time: CPU = 106 us, elapsed = 106.096 us.
+......9......8......7......6
+DC simulation time: CPU = 106 us, elapsed = 104.904 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 110 us, elapsed = 108.957 us.
+DC simulation time: CPU = 108 us, elapsed = 106.812 us.
+DC simulation time: CPU = 105 us, elapsed = 103.951 us.
+DC simulation time: CPU = 105 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+......9......8......7......6.
+DC simulation time: CPU = 106 us, elapsed = 107.05 us.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 104 us, elapsed = 105.143 us.
+DC simulation time: CPU = 104 us, elapsed = 104.189 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 104.904 us.
+......9......8......7......6..
+DC simulation time: CPU = 106 us, elapsed = 105.858 us.
+DC simulation time: CPU = 107 us, elapsed = 106.096 us.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 112 us, elapsed = 112.057 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+......9......8......7......6...
+DC simulation time: CPU = 105 us, elapsed = 106.096 us.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 105 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 104 us, elapsed = 105.143 us.
+DC simulation time: CPU = 104 us, elapsed = 104.904 us.
+......9......8......7......6....
+DC simulation time: CPU = 106 us, elapsed = 107.05 us.
+DC simulation time: CPU = 105 us, elapsed = 104.189 us.
+DC simulation time: CPU = 104 us, elapsed = 105.143 us.
+DC simulation time: CPU = 105 us, elapsed = 105.143 us.
+DC simulation time: CPU = 105 us, elapsed = 105.143 us.
+DC simulation time: CPU = 105 us, elapsed = 105.143 us.
+DC simulation time: CPU = 105 us, elapsed = 105.143 us.
+DC simulation time: CPU = 105 us, elapsed = 105.143 us.
+......9......8......7......6.....
+DC simulation time: CPU = 107 us, elapsed = 105.858 us.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 107 us, elapsed = 107.05 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 105 us, elapsed = 104.189 us.
+......9......8......7......6......
+DC simulation time: CPU = 114 us, elapsed = 113.964 us.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 104.189 us.
+DC simulation time: CPU = 104 us, elapsed = 104.904 us.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 104 us, elapsed = 104.189 us.
+......9......8......7......6......5
+DC simulation time: CPU = 106 us, elapsed = 105.858 us.
+DC simulation time: CPU = 106 us, elapsed = 104.904 us.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 105 us, elapsed = 103.951 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+......9......8......7......6......5.
+DC simulation time: CPU = 105 us, elapsed = 105.858 us.
+DC simulation time: CPU = 105 us, elapsed = 105.858 us.
+DC simulation time: CPU = 111 us, elapsed = 111.103 us.
+DC simulation time: CPU = 104 us, elapsed = 105.143 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+......9......8......7......6......5..
+DC simulation time: CPU = 106 us, elapsed = 105.858 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 105 us, elapsed = 104.189 us.
+DC simulation time: CPU = 106 us, elapsed = 105.143 us.
+DC simulation time: CPU = 103 us, elapsed = 103.951 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+......9......8......7......6......5...
+DC simulation time: CPU = 106 us, elapsed = 105.143 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 105 us, elapsed = 104.189 us.
+DC simulation time: CPU = 105 us, elapsed = 104.189 us.
+......9......8......7......6......5....
+DC simulation time: CPU = 106 us, elapsed = 106.096 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 103 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 104.189 us.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 105 us, elapsed = 105.143 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+......9......8......7......6......5.....
+DC simulation time: CPU = 106 us, elapsed = 106.096 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+......9......8......7......6......5......
+DC simulation time: CPU = 107 us, elapsed = 107.05 us.
+DC simulation time: CPU = 105 us, elapsed = 103.951 us.
+DC simulation time: CPU = 105 us, elapsed = 103.951 us.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 105 us, elapsed = 103.951 us.
+DC simulation time: CPU = 106 us, elapsed = 104.904 us.
+......9......8......7......6......5......4
+DC simulation time: CPU = 107 us, elapsed = 107.05 us.
+DC simulation time: CPU = 106 us, elapsed = 105.858 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 106 us, elapsed = 106.096 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+......9......8......7......6......5......4.
+DC simulation time: CPU = 106 us, elapsed = 105.858 us.
+DC simulation time: CPU = 104 us, elapsed = 104.189 us.
+DC simulation time: CPU = 104 us, elapsed = 105.143 us.
+DC simulation time: CPU = 104 us, elapsed = 104.189 us.
+DC simulation time: CPU = 105 us, elapsed = 104.189 us.
+DC simulation time: CPU = 104 us, elapsed = 105.143 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+......9......8......7......6......5......4..
+DC simulation time: CPU = 107 us, elapsed = 106.096 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 102 us, elapsed = 102.997 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 103.235 us.
+DC simulation time: CPU = 106 us, elapsed = 107.05 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+......9......8......7......6......5......4...
+DC simulation time: CPU = 106 us, elapsed = 105.858 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 105 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 104.904 us.
+DC simulation time: CPU = 104 us, elapsed = 104.189 us.
+DC simulation time: CPU = 104 us, elapsed = 104.189 us.
+......9......8......7......6......5......4....
+DC simulation time: CPU = 106 us, elapsed = 104.904 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 104 us, elapsed = 104.189 us.
+DC simulation time: CPU = 104 us, elapsed = 104.189 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 105 us, elapsed = 103.951 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+......9......8......7......6......5......4.....
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 107 us, elapsed = 107.05 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 104.189 us.
+DC simulation time: CPU = 104 us, elapsed = 104.904 us.
+......9......8......7......6......5......4......
+DC simulation time: CPU = 106 us, elapsed = 106.096 us.
+DC simulation time: CPU = 105 us, elapsed = 105.143 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 107 us, elapsed = 107.05 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+......9......8......7......6......5......4......3
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 104 us, elapsed = 104.189 us.
+DC simulation time: CPU = 104 us, elapsed = 104.189 us.
+DC simulation time: CPU = 105 us, elapsed = 104.189 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 103 us, elapsed = 103.951 us.
+......9......8......7......6......5......4......3.
+DC simulation time: CPU = 105 us, elapsed = 106.096 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 108 us, elapsed = 107.05 us.
+DC simulation time: CPU = 106 us, elapsed = 106.096 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+......9......8......7......6......5......4......3..
+DC simulation time: CPU = 106 us, elapsed = 106.096 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+......9......8......7......6......5......4......3...
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 104 us, elapsed = 105.143 us.
+DC simulation time: CPU = 103 us, elapsed = 103.951 us.
+DC simulation time: CPU = 103 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 108 us, elapsed = 107.05 us.
+......9......8......7......6......5......4......3....
+DC simulation time: CPU = 106 us, elapsed = 106.096 us.
+DC simulation time: CPU = 105 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 103 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 103 us, elapsed = 103.951 us.
+......9......8......7......6......5......4......3.....
+DC simulation time: CPU = 106 us, elapsed = 106.096 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 103 us, elapsed = 102.043 us.
+DC simulation time: CPU = 111 us, elapsed = 109.911 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+......9......8......7......6......5......4......3......
+DC simulation time: CPU = 106 us, elapsed = 106.096 us.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 104 us, elapsed = 104.189 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+......9......8......7......6......5......4......3......2
+DC simulation time: CPU = 105 us, elapsed = 106.096 us.
+DC simulation time: CPU = 109 us, elapsed = 108.004 us.
+DC simulation time: CPU = 103 us, elapsed = 104.189 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+......9......8......7......6......5......4......3......2.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 108 us, elapsed = 108.004 us.
+DC simulation time: CPU = 104 us, elapsed = 105.143 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+......9......8......7......6......5......4......3......2..
+DC simulation time: CPU = 106 us, elapsed = 106.096 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 103 us, elapsed = 103.951 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 103 us, elapsed = 104.189 us.
+......9......8......7......6......5......4......3......2...
+DC simulation time: CPU = 106 us, elapsed = 105.858 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 109 us, elapsed = 108.957 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 102 us, elapsed = 100.851 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+......9......8......7......6......5......4......3......2....
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 104 us, elapsed = 104.904 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 105 us, elapsed = 103.951 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+......9......8......7......6......5......4......3......2.....
+DC simulation time: CPU = 105 us, elapsed = 106.096 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 114 us, elapsed = 114.918 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 102 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+......9......8......7......6......5......4......3......2......
+DC simulation time: CPU = 105 us, elapsed = 104.189 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 102 us, elapsed = 102.043 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+......9......8......7......6......5......4......3......2......1
+DC simulation time: CPU = 104 us, elapsed = 104.904 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 103 us, elapsed = 103.951 us.
+DC simulation time: CPU = 105 us, elapsed = 103.951 us.
+DC simulation time: CPU = 109 us, elapsed = 108.957 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+......9......8......7......6......5......4......3......2......1.
+DC simulation time: CPU = 106 us, elapsed = 104.904 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 104.904 us.
+DC simulation time: CPU = 105 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+......9......8......7......6......5......4......3......2......1..
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 105 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 103 us, elapsed = 103.951 us.
+......9......8......7......6......5......4......3......2......1...
+DC simulation time: CPU = 106 us, elapsed = 105.858 us.
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 103 us, elapsed = 104.189 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 105 us, elapsed = 104.189 us.
+DC simulation time: CPU = 103 us, elapsed = 103.951 us.
+......9......8......7......6......5......4......3......2......1....
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 104.189 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+......9......8......7......6......5......4......3......2......1.....
+DC simulation time: CPU = 105 us, elapsed = 104.904 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 104 us, elapsed = 102.997 us.
+DC simulation time: CPU = 102 us, elapsed = 102.997 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+......9......8......7......6......5......4......3......2......1......
+DC simulation time: CPU = 106 us, elapsed = 105.858 us.
+DC simulation time: CPU = 104 us, elapsed = 103.951 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 103 us, elapsed = 102.997 us.
+DC simulation time: CPU = 103 us, elapsed = 103.951 us.
+DC simulation time: CPU = 103 us, elapsed = 102.043 us.
+......9......8......7......6......5......4......3......2......1......0
+DC simulation time: CPU = 118 us, elapsed = 118.017 us.
+DC simulation time: CPU = 116 us, elapsed = 115.871 us.
+DC simulation time: CPU = 116 us, elapsed = 115.871 us.
+Accumulated DC solution time =            0 s.
+Intrinsic ac analysis time =              0 s.
+Total time required for ac analysis `ac': CPU = 129.539 ms, elapsed = 129.935 ms.
+Time accumulated: CPU = 547.367 ms, elapsed = 4.29145 s.
+Peak resident memory used = 124 Mbytes.
+
+
+Notice from spectre.
+    45 notices suppressed.
+
+
+ol41: `vid' set to 250e-03.
+
+ol42: `vo' set to -1.65.
+
+*****************
+DC Analysis `dc3'
+*****************
+Important parameter values:
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(OUT) = 1.65 V
+I: I(VSUPP:p) = 4.276 mA
+Convergence achieved in 16 iterations.
+DC simulation time: CPU = 575 us, elapsed = 576.019 us.
+Total time required for dc analysis `dc3': CPU = 662 us, elapsed = 660.896 us.
+Time accumulated: CPU = 550.187 ms, elapsed = 4.29427 s.
+Peak resident memory used = 124 Mbytes.
+
+
+ol51: `vid' set to -250e-03.
+
+ol52: `vo' set to 1.65.
+
+*****************
+DC Analysis `dc4'
+*****************
+Important parameter values:
+    reltol = 100e-06
+    abstol(V) = 1 uV
+    abstol(I) = 1 pA
+    temp = 27 C
+    tnom = 27 C
+    tempeffects = all
+    gmindc = 1 pS
+
+Maximum value achieved for any signal of each quantity: 
+V: V(DUT.R0.100) = 3.295 V
+I: I(VSUPN:p) = 85.94 uA
+Convergence achieved in 14 iterations.
+DC simulation time: CPU = 501 us, elapsed = 500.917 us.
+Total time required for dc analysis `dc4': CPU = 574 us, elapsed = 575.066 us.
+Time accumulated: CPU = 552.729 ms, elapsed = 4.29681 s.
+Peak resident memory used = 124 Mbytes.
+
