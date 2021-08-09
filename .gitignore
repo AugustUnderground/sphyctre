@@ -24,3 +24,4 @@ sphyctre/*$py.class
 tests/proprietary/
 
 tb.ahdlSimDB/
+*.log
