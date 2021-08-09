@@ -102,7 +102,7 @@
     """
     Convert the named numpy array into a pandas dataframe.
     """
-    (pd.DataFrame self.data)))
+    (-> self (. data) (.byteswap) (.newbyteorder) (pd.DataFrame))))
 
 (defclass NutMeg []
   """

@@ -59,7 +59,11 @@
         _positive ".*\nt"
         _negative ".*\nnil")
 
-  (defn __init__ [self ^str netlist &optional ^str spectre]
+  (defn __init__ [self ^str netlist &optional ^str spectre
+                       ^float [vs 0.5]   ^float [cl 5e-12]
+                       ^float [rl 100e6] ^float [i0 3e-6]
+                       ^float [vsup 3.3] ^float [fin 1e3]
+                       ^float [dev 1e-4] ]
     """
     Creates a new spectre interactive session with the given netlist.
     """
@@ -98,9 +102,11 @@
     (self._run-command "(sclRun \"all\")")
     (self._read-results))
 
-  (defn list-parameters
-    ()
-  )
+  (defn list-parameters []
+    """
+    List defined parameters in the netlist.
+    """
+    (raise (NotImplementedError "Check the netlist for available parameters")))
 
   (defn alter-parameter ^bool [self ^str param ^float value]
     """
