@@ -14,11 +14,21 @@ After cloning
 $ pip install .
 ```
 
-## Simulation 
+## Amplifier Characterization 
 
-### Non-Interactive
+```python
+from sphyctre import OpAnalyzer
 
-### Interacvite
+pdk_path = f"some/path/to/pdk"
+tb_path  = f"some/path/to/test/bench"
+
+op = OpAnalyzer(tb_path, pdk_path)
+
+performance = op.simulate({"Wcm1": 1e-6, "Ld": 0.5e-6})
+
+print(performance)
+print(op.simulation-results)
+```
 
 ## Getting Started and Examples
 
