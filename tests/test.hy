@@ -16,7 +16,7 @@
 (setv pdk-path f"/home/uhlmanny/gonzo/Opt/pdk/x-fab/XKIT/xh035/cadence/v6_6/spectre/v6_6_2/mos"
       tb-path  f"tests/proprietary/sym")
 
-(setv op (OpAnalyzer tb-path pdk))
+(setv op (OpAnalyzer tb-path pdk-path))
 
 (setv t0 (time.process-time))
 (setv performance (.simulate op {"Wcm1" 1e-6 "Ld" 0.5e-6}))
@@ -24,3 +24,4 @@
 (print f"Took {(- t1 t0) :.4f}s")
 
 (pp performance)
+(pp op.simulation-results)
