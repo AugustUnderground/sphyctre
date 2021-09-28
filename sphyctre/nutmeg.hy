@@ -1,6 +1,8 @@
 (import os)
 (import re)
+(import errno)
 (import random)
+(import warnings)
 (import string)
 (import [numpy :as np])
 (import [pandas :as pd])
@@ -96,7 +98,7 @@
 
     (setv self.data (np.frombuffer raw-data 
                                    :dtype dtypes 
-                                   :count self.n-points)))
+                                   :count (max 1 self.n-points))))
   
   (defn as-dataframe [self]
     """
@@ -129,18 +131,18 @@
                                 file-name)))
 
     (setv raw-data (with [raw-file (open file-name "rb")]
-                      (.read raw-file)))
+                          (.read raw-file)))
 
     (setv self.title (_read-next-line-pattern raw-data "Title")
           self.date  (_read-next-line-pattern raw-data "Date"))
 
-    (setv pex       (-> (setx psx (lfor idx (-> NutMeg._plots-id
+    (setv pex        (-> (setx psx (lfor idx (-> NutMeg._plots-id
                                                 (re.compile) 
                                                 (.finditer raw-data)) 
                                             (.start idx))) 
                         (rest) (list) (+ [(len raw-data)]))
-          raw-plots (lfor (, sx ex) (zip psx pex) 
-                          (get raw-data (slice sx ex))))
+          raw-plots  (lfor (, sx ex) (zip psx pex) 
+                           (get raw-data (slice sx ex))))
 
     (setv self.plots (dfor plt raw-plots 
                            [(_get-analysis-type (_read-next-line-pattern plt "Plotname"))
@@ -148,7 +150,7 @@
 
           self.n-plots (len self.plots)))
 
-  (defn plot-dict [self]
+  (defn plot-dict ^dict [self]
     """
     Return a dictionary of plots as pandas DataFrames.
     """

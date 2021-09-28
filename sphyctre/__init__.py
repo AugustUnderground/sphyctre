@@ -1,3 +1,4 @@
 import hy
 from .nutmeg import NutMeg, NutPlot
-from .spectre import SpectreSession, simulate, simulate_netlist
+from .spectre import SpectreInteractive, simulate, simulate_netlist
+from .util import OpAnalyzer, characterize_performance, characterize_operatingpoint

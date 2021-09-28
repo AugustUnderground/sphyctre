@@ -42,7 +42,7 @@
     (temp-netlist.write netlist)
     (simulate tmp)))
 
-(defclass SpectreSession []
+(defclass SpectreInteractive []
   """
   Interactive Spectre Simulation Session
   Attributes:
@@ -59,11 +59,11 @@
         _positive ".*\nt"
         _negative ".*\nnil")
 
-  (defn __init__ [self ^str netlist &optional ^str spectre
+  (defn __init__ [self ^str netlist &optional ^str spectre ^str include-dir
                        ^float [vs 0.5]   ^float [cl 5e-12]
                        ^float [rl 100e6] ^float [i0 3e-6]
                        ^float [vsup 3.3] ^float [fin 1e3]
-                       ^float [dev 1e-4] ]
+                       ^float [dev 1e-4] ^str [raw-file None] ]
     """
     Creates a new spectre interactive session with the given netlist.
     """
@@ -73,12 +73,13 @@
                                 netlist)))
 
     (setv self.net-file netlist
-          self.raw-file f"{(first (os.path.splitext self.net-file))}.raw")
+          self.raw-file (or raw-file f"{(first (os.path.splitext self.net-file))}.raw"))
 
-    (setv spectre-command f"{(or spectre SpectreSession._spectre-command)} +interactive {self.net-file}"
+    (setv cmd (or spectre SpectreInteractive._spectre-command)
+          spectre-command f"{cmd} -format nutbin +interactive -I{include-dir} {self.net-file}"
           self.shell (pexpect.spawn spectre-command))
 
-    (unless (= (self.shell.expect SpectreSession._prompt-pattern) 0)
+    (unless (= (self.shell.expect SpectreInteractive._prompt-pattern) 0)
       (raise (IOError errno.EIO (os.strerror errno.EIO) "spectre"))))
 
   (defn _run-command ^bool [self ^str command]
@@ -87,15 +88,15 @@
     false based on what the previous command returned.
     """
     (self.shell.sendline command)
-    (= (self.shell.expect SpectreSession._prompt-pattern) 0))
+    (= (self.shell.expect SpectreInteractive._prompt-pattern) 0))
 
-  (defn _read-results ^NutMeg [self]
+  (defn _read-results ^dict [self]
     """
     Internal function for reading the results of a simpulation.
     """
-    (NutMeg self.raw-file))
+    (-> self (. raw-file) (NutMeg) (.plot-dict)))
 
-  (defn run-all ^NutMeg [self]
+  (defn run-all ^dict [self]
     """
     Run all analyses defined in the netlist.
     """
@@ -126,8 +127,9 @@
   Destructor will attempt to close the spectre session.
   """
     (when (.isalive self.shell)
-      (self.shell.sendline "(sclQuit)"))
-    (when (.isalive self.shell))
-      (warnings.warn RuntimeWarning 
-        f"Failed to close spectre session cleanly, attempting to force it.")
-      (self.shell.close :force True)))
+      (self.shell.sendline "(sclQuit)")
+      (self.shell.wait)
+      (when (.isalive self.shell)
+        (warnings.warn f"Spectre refused to exit gracefully, forcing..." 
+                       RuntimeWarning)
+        (self.shell.terminate :force True)))))
