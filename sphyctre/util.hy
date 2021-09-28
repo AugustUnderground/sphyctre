@@ -59,20 +59,28 @@
           hi (- (* vs-ul vs) (* vs 0.5))
           tran (get plots "tran")
           mid-point (/ (.max tran.time) 2)
+
           rising (get tran (& (<= tran.time mid-point) 
                               (>= tran.OUT lo)
                               (<= tran.OUT hi))
                            ["time"])
+
+          ;_ (print (-> rising (. values) (np.max :initial -1.0)))
+
           sr-rising (/ (- hi lo) 
-                       (- (-> rising (. values) (.max))
-                          (-> rising (. values) (.min))))
+                       (- (-> rising (. values) (np.max :initial 1.0))
+                          (-> rising (. values) (np.min :initial 0.0))))
+                          
           falling (get tran (& (> tran.time mid-point) 
                                (>= tran.OUT lo)
                                (<= tran.OUT hi))
                             ["time"])
+
+          ;_ (print (-> falling (. values) (np.min :initial -1.0)))
+
           sr-falling (/ (- hi lo) 
-                        (- (-> falling (. values) (.max))
-                           (-> falling (. values) (.min))))
+                        (- (-> falling (. values) (np.max :initial 1.0))
+                           (-> falling (. values) (np.min :initial 0.0))))
 
           ;; Noise Analysis
           noise (get plots "noise")
