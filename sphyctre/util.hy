@@ -130,29 +130,30 @@
           i-out-max (-> plots (get "dc4" "DUT:O") (. values) (first))
 
           ;; Performance dictionary
-          performance {"voff-stat"  voff-stat
-                       "voff-syst"  voff-syst
-                       "A0dB"       A0dB
+          performance {"voff_stat"  voff-stat
+                       "voff_sys"   voff-syst
+                       "a_0"        A0dB
                        "ugbw"       f0dB
-                       "PM"         PM
-                       "GM"         GM
-                       "SR-r"       sr-rising
-                       "SR-f"       sr-falling
-                       "vn-1Hz"     vn-1Hz
-                       "vn-10Hz"    vn-10Hz
-                       "vn-100Hz"   vn-100Hz
-                       "vn-1kHz"    vn-1kHz
-                       "vn-10kHz"   vn-10kHz
-                       "vn-100kHz"  vn-100kHz
-                       "vo-lo"      vol-dc
-                       "vo-hi"      voh-dc
-                       "vi-lo"      vil-ac
-                       "vi-hi"      vih-ac
-                       "psrr-n"     psrr-n
-                       "psrr-p"     psrr-p
+                       "pm"         PM
+                       "gm"         GM
+                       "sr_r"       sr-rising
+                       "sr_f"       sr-falling
+                       "vn_1Hz"     vn-1Hz
+                       "vn_10Hz"    vn-10Hz
+                       "vn_100Hz"   vn-100Hz
+                       "vn_1kHz"    vn-1kHz
+                       "vn_10kHz"   vn-10kHz
+                       "vn_100kHz"  vn-100kHz
+                       "v_ol"       vol-dc
+                       "v_oh"       voh-dc
+                       "v_il"       vil-ac
+                       "v_ih"       vih-ac
+                       "psrr_n"     psrr-n
+                       "psrr_p"     psrr-p
                        "cmrr"       cmrr
-                       "i-out-max"  i-out-max
-                       "i-out-min"  i-out-min}]
+                       "i_out_max"  i-out-max
+                       "i_out_min"  i-out-min}]
+
     ;; Make sure no NaNs, or Infs are in the results
     (dfor (, p v) (.items performance) 
       [p (np.nan-to-num v)])))
